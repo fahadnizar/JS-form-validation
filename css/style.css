@@ -1,0 +1,21 @@
+.formBox{
+	margin-left:300px;
+	margin-top:100px;
+	width: 600px;
+	border: 1px solid rgb(221, 225, 221);
+	padding-bottom: 5px; 
+	border-radius: 5px;
+	margin-bottom: 90px;
+	background-color:whitesmoke;
+}
+.formTitle{
+	margin-left:180px;
+	color:blue;
+}
+.interest{
+	font-size:15px;
+	margin-left:10px;
+}
+body {
+  background-color:lightblue;
+}
