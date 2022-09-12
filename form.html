@@ -6,93 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
     <title>Form</title>
-	<link rel="shortcut icon" href="Assets/stackIcon2.png">
+    <link rel="shortcut icon" href="Assets/stackIcon2.png">
   </head>
-<body >
-<div class="formBox" > 
-	<h2 class="formTitle" >Student Registration</h2>  
-
-<table>
-<form name="myform" method="post" action="" onsubmit="return validateform()" >  
+  <body>
+    <div class="formBox">
+      <h2 class="formTitle">Student Registration</h2>
+      <form name="myform" method="post" action="" onsubmit="return validateform()">
+        <table>
+          <tr>
+            <td>
+              <label for="fname">First name:</label>
+            </td>
+            <td>
+              <input type="text" id="fname" name="fname" >
+            </td>
+            <td>
+              <label for="lname">Last name:</label>
+            </td>
+            <td>
+              <input type="text" id="lname" name="lname">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email"> Email </label>
+            </td>
+            <td>
+              <input type="email" id="email" name="email" />
+            </td>
+          </tr>
 	<tr>
-		<td><label for="fname">First name:</label></td>
-		<td><input type="text" id="fname" name="fname"></td>
-		<td><label for="lname">Last name:</label></td>
-		<td><input type="text" id="lname" name="lname"></td>
-	</tr>
-	
-	<tr>
-                <td><label for="email">
-                        Email
-                    </label>
-                </td>
-                <td><input type="email" id="email" name="email" />
-                </td>
-        </tr>
-	<tr>
-                <td><label for="telnum">Contact no</label>
-                </td>
-                <td><input type="number" id="contnum" name="contnum" />
-                </td>
-            </tr>
-	<tr>
-                <td><label for="text">Remarks</label>
-                </td>
-                <td><textarea id="myTextarea"></textarea>
-                </td>
-            </tr>
-	<tr>	
-		<td>
-		<label for="password">password</label>
-		</td>
-		<td><input type="password" name="password"></td>
-	</tr>
-	
-	<tr>
-		<td><label for="s">male</label></td>
-		<td><input type="radio" name="size" value="S" id="s"></td>	
-	</tr>
-	<tr>
-		<td><label for="l">Female</label></td>
-		<td><input type="radio" name="size" value="L" id="l"></td>
-		
-	</tr>
-	
-	<tr>
-	<td><h3 class="interest" >Select your Interests:</h3></td>
-	</tr>
-	
-	<tr>
-	<td><label for="intetrest1">Computer programming</label></td>
-	<td><input type="checkbox" id="intetrest1" name="intetrest1" value="Interest"></td>
-	</tr>
-	<tr>
-	<td><label for="intetrest2">Web Desining</label></td>
-	<td><input type="checkbox" id="intetrest2" name="intetrest2" value="Interest"></td>
-	</tr>
-	<tr>
-	<td><label for="intetrest3">IOT</label></td>
-	<td><input type="checkbox" id="intetrest3" name="intetrest3" value="Interest"></td>
-	</tr>
-	<tr>
-	<td><label for="cars">University:</label></td>
-	<td><select id="cars" name="cars">
-    		<option value="volvo">KTU</option>
-    		<option value="saab">CUSAT</option>
-    		<option value="fiat">KU</option>
-    		<option value="audi">NITC</option>
-  	</select>
-  	<input type="submit"></td>
-	</tr>
-	<tr>
-		<td><input type="submit" value="register"></td>
+            <td>
+              <label for="firstpassword">password:</label>
+            </td>
+            <td>
+              <input type="password" name="password" />
+            </td>
 	</tr>
 
-</form> 
-</table>
-</div>
-	<footer>
+	<tr>
+            <td>
+              <label for="secondpassword">Re-enter Password:</label>
+            </td>
+            <td>
+              <input type="password" name="password2" />
+            </td>
+	</tr>
+
+          <tr>
+            <td>
+              <label for="number">Contact no:</label>
+            </td>
+            <td>
+              <input type="number" id="number" name="number"  />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="text">Address:</label>
+            </td>
+            <td>
+              <textarea id="myTextarea"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h3 class="interest">Gender:</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="s">male</label>
+            </td>
+            <td>
+              <input type="radio" name="size" value="S" id="s">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="l">Female</label>
+            </td>
+            <td>
+              <input type="radio" name="size" value="L" id="l">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h3 class="interest">Select your Interests:</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="intetrest1">Computer programming</label>
+            </td>
+            <td>
+              <input type="checkbox" id="intetrest1" name="intetrest1" value="Interest">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="intetrest2">Web Desining</label>
+            </td>
+            <td>
+              <input type="checkbox" id="intetrest2" name="intetrest2" value="Interest">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="intetrest3">IOT</label>
+            </td>
+            <td>
+              <input type="checkbox" id="intetrest3" name="intetrest3" value="Interest">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="cars">University:</label>
+            </td>
+            <td>
+              <select id="cars" name="cars">
+                <option value="volvo">KTU</option>
+                <option value="saab">CUSAT</option>
+                <option value="fiat">KU</option>
+                <option value="audi">NITC</option>
+              </select>
+          </tr>
+        </table>
+        <div class="registerBox">
+          <td>
+            <input type="submit" value="Register" class="register">
+          </td>
+        </div>
+      </form>
+    </div>
+    <footer>
       <script src="js/script1.js"></script>
-	</footer>
-</body>
+    </footer>
+  </body>
 </html>
