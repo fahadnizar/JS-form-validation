@@ -11,65 +11,42 @@
   <body>
     <div class="formBox">
       <h2 class="formTitle">Student Registration</h2>
-      <form name="myform" method="post" action="" onsubmit="return validateform()">
+      <form name="myform" method="post" action="." onsubmit="return validateform()">
         <table>
           <tr>
-            <td>
-              <label for="fname">First name:</label>
-            </td>
-            <td>
-              <input type="text" id="fname" name="fname" >
-            </td>
-            <td>
-              <label for="lname">Last name:</label>
-            </td>
-            <td>
-              <input type="text" id="lname" name="lname">
-            </td>
+            <td><label>First name:</label></td>
+            <td><input type="text" id="firstname" name="fname"></td>
+          </tr>
+          <tr>
+            <td><label>Last name:</label></td>
+            <td><input type="text" id="lastname" name="lname"></td>
+          </tr>
+          <tr>
+            <td><label for="email"> Email </label></td>
+            <td><input type="email" id="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td><label>password:</label></td>
+            <td><input type="password" name="password" id="password1" /></td>
+          </tr>
+          <tr>
+            <td><label>Re-enter Password:</label></td>
+            <td><input type="password" name="password2" id="password2" /></td>
+          </tr>
+          <tr>
+            <td><label for="number">Contact no:</label></td>
+            <td><input type="number" id="number" name="number" /></td>
           </tr>
           <tr>
             <td>
-              <label for="email"> Email </label>
-            </td>
-            <td>
-              <input type="email" id="email" name="email" />
-            </td>
-          </tr>
-	<tr>
-            <td>
-              <label for="firstpassword">password:</label>
-            </td>
-            <td>
-              <input type="password" name="password" />
-            </td>
-	</tr>
-
-	<tr>
-            <td>
-              <label for="secondpassword">Re-enter Password:</label>
-            </td>
-            <td>
-              <input type="password" name="password2" />
-            </td>
-	</tr>
-
-          <tr>
-            <td>
-              <label for="number">Contact no:</label>
-            </td>
-            <td>
-              <input type="number" id="number" name="number"  />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label for="text">Address:</label>
+              <label for="myTextarea">Address:</label>
             </td>
             <td>
               <textarea id="myTextarea"></textarea>
             </td>
           </tr>
           <tr>
+           <td></td>
             <td>
               <h3 class="interest">Gender:</h3>
             </td>
@@ -91,6 +68,7 @@
             </td>
           </tr>
           <tr>
+           <td></td>
             <td>
               <h3 class="interest">Select your Interests:</h3>
             </td>
@@ -133,9 +111,9 @@
           </tr>
         </table>
         <div class="registerBox">
-          <td>
+        
             <input type="submit" value="Register" class="register">
-          </td>
+        
         </div>
       </form>
     </div>
